@@ -1,0 +1,10 @@
+fastapi[all]
+gunicorn
+uvicorn
+httpx
+python-dotenv
+pydantic-settings
+pytest-cov
+pytest
+black
+flake8

@@ -1,0 +1,14 @@
+services:
+  dev_database:
+    image: postgres:15
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: postgres
+    volumes:
+      - dev_database:/var/lib/postgresql/data
+
+volumes:
+  dev_database:
